@@ -1,0 +1,24 @@
+[package]
+name = "ggml-sys"
+version = "0.1.0"
+edition = "2024"
+links = "ggml"
+build = "build.rs"
+
+[lib]
+path = "src/lib.rs"
+
+[features]
+default = []
+metal = []
+opencl = []
+vulkan = []
+cuda = []
+
+[build-dependencies]
+
+[dev-dependencies]
+
+[package.metadata.ggml]
+upstream = "https://github.com/ggml-org/ggml.git"
+revision = "57e2c2ca2a7cae756b1c4dfafa0cdfef9051d234"

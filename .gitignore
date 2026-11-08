@@ -1,0 +1,8 @@
+# Rust build output
+**/target/
+
+# Standalone CMake builds documented in BUILDING.md
+/build/
+
+# Nested sys package lockfile; the workspace root Cargo.lock is retained
+/crates/ggml/sys/Cargo.lock

@@ -1,0 +1,14 @@
+[package]
+name = "graph-example"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+metal = ["ggml/metal"]
+opencl = ["ggml/opencl"]
+vulkan = ["ggml/vulkan"]
+cuda = ["ggml/cuda"]
+
+[dependencies]
+ggml = { path = "../../crates/ggml" }

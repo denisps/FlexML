@@ -1,0 +1,14 @@
+[package]
+name = "ggml"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+metal = ["ggml-sys/metal"]
+opencl = ["ggml-sys/opencl"]
+vulkan = ["ggml-sys/vulkan"]
+cuda = ["ggml-sys/cuda"]
+
+[dependencies]
+ggml-sys = { path = "sys" }
